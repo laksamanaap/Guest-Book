@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@keyframes Transition{
+  from {
+    padding: 0 10px 0 10px;
+    opacity: 0;
+    background-color: white;
+  }
+  to {
+    opacity: 1;
+    background-color: white;
+  }
+}
+
+@keyframes Transition-Img{
+  from {
+    opacity: 0;
+    padding: 0px 200px 0px 200px;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  font-family: "", sans-serif;
+  background-color: #d0d0ce;
+
+}
+
+.brand-wrapper {
+  margin-bottom: 19px; 
+}
+  .brand-wrapper .logo {
+    width: 150px;
+    height: 150px; 
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+
+.login-card {
+animation-name: Transition;
+animation-duration:2s;
+border-radius: 25px;
+box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+overflow: hidden; 
+height:100%;
+transition: 2s;
+border:3px solid #AD93DD;
+box-shadow: 0px 12px 0px 0px #AD93DD;
+}
+
+  .login-card-img {
+    animation-name: Transition-Img;
+    animation-duration:2s;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; 
+
+      }
+
+      .text-img {
+        position:absolute !important;
+        position: relative;
+        margin-left: 50px;
+        margin-top: 40px;
+        z-index: 1;
+      }
+      
+
+  .login-card .card-body {
+    animation-name: Transition;
+  animation-duration:2s;
+    padding: 5px 60px 0px;
+
+  }
+    @media (max-width: 422px) {
+      .login-card .card-body {
+        padding: 35px 24px; } 
+      }
+  .login-card-description {
+    font-size: 35px;
+    color: #654C96;
+    margin-bottom: 23px;
+    font-weight: 700;
+    text-shadow: 0px 4px 0px rgba(119, 6, 148, 0.3);
+    transition: 1s;
+   }
+  .login-card form {
+    max-width: 1000px;
+    transition: 1s; 
+  }
+  .login-card .form-control {
+    border: 2px solid #AD93DD;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    min-height: 50px;
+    font-size: 13px;
+    font-weight: normal; 
+    border-radius: 50px;
+    transition: 1s;
+  }
+
+  .login-card:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+      0 20px 50px rgba(0, 0, 0, 0.48);
+      transition: 1s;
+  }
+
+    .login-card .form-control::-webkit-input-placeholder {
+      color: #919aa3;
+      font-size: 15px; 
+    }
+    .login-card .form-control::-moz-placeholder {
+      color: #919aa3; 
+    }
+    .login-card .form-control:-ms-input-placeholder {
+      color: #919aa3; 
+    }
+    .login-card .form-control::-ms-input-placeholder {
+      color: #919aa3; 
+    }
+    .login-card .form-control::placeholder {
+      color: #919aa3; 
+    }
+    .form-control:focus {
+        border-color: #AD93DD;
+        box-shadow: 0px 5px 0px 0px #AD93DD;
+        transition: 0.6s;
+    } 
+  .login-card .login-btn {
+    padding: 13px 20px 12px;
+    background: #00789E;
+    border: 3px solid #005873;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #fff;
+    margin-bottom: 24px; 
+    box-shadow: 0px 7px 0px 0px #00ad9c;
+  }
+    .login-card .login-btn:hover {
+      border: 3px solid #005873;
+      background-color: transparent;
+      color: #000; 
+    }
+    .login-card .login-btn:focus {
+        border-color: #0c63b5;
+        box-shadow: 0px 4px 0px 0px #0c63b5;
+        transition: 0.6s;
+    }
+  .login-card .forgot-password-link {
+    font-size: 14px;
+    color: #919aa3;
+    margin-bottom: 12px; }
+  .login-card-footer-text {
+    font-size: 16px;
+    color: #0d2366;
+    margin-bottom: 60px; }
+    @media (max-width: 767px) {
+      .login-card-footer-text {
+        margin-bottom: 24px; } }
+  .login-card-footer-text a {
+    font-size: 15px;
+    color: #005F59;
+    font-weight: bold;
+  }
+
+  textarea {
+    width:520px;
+    border-radius: 20px !important;
+    border: 2px solid #ADD;
+  }
+  
+  
+  .btn {
+    background: #9081AD;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 7px 0px 0px #7F6E9E;
+    transition: 0.3s;    
+  }
+  
+  #Video-bg {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+}
